@@ -127,7 +127,6 @@ for j in filter(lambda x: re.findall(r'to_', x), list1):
 list2 = [{'aa': 100}, {'bb': 101, 'cc': 102}]
 for k in filter(lambda x: 'aa' in x.keys(), list2):
     print(k)
-
 print('*' * 50)
 '''
 添加字典的方法
@@ -137,7 +136,6 @@ base_headers = {'user-Agent': 100,
                 'accept-encoding': 'gzip,deflate,sdch', }
 base_headers = dict(base_headers, **option)  # 新建了一个
 print(base_headers)
-
 # 方法二
 base_headers.update(option)
 print(base_headers)
